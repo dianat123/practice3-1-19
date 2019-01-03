@@ -1,0 +1,80 @@
+/* Variables */
+/* Colors */
+/* Base Unit */
+/* Media Query */
+/* mixin */
+/* Content */
+/* If else example */
+/*For loop */
+/* Custom function */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clrflt {
+  clear: both; }
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto; }
+
+.function-ex, .condition-ex, .for-loop-ex, .custom-function {
+  padding: 20px 0;
+  background-color: #a4c5af; }
+  .function-ex .title, .condition-ex .title, .for-loop-ex .title, .custom-function .title {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+.condition-ex {
+  background-color: #8da294;
+  border-bottom: 3px solid #333333;
+  border-top: 3px solid #333333; }
+  .condition-ex else {
+    border: 3px solid #333333; }
+  .condition-ex else {
+    border: 3px solid #333333; }
+
+.for-loop-ex {
+  background-color: #7d8a81; }
+  .for-loop-ex h1 {
+    font-size: 60px;
+    color: #00facf; }
+  .for-loop-ex h2 {
+    font-size: 50px;
+    color: #00f0c6; }
+  .for-loop-ex h3 {
+    font-size: 40px;
+    color: #00e0ba; }
+  .for-loop-ex h4 {
+    font-size: 30px;
+    color: #00cca9; }
+  .for-loop-ex h5 {
+    font-size: 20px;
+    color: #00b394; }
+  .for-loop-ex h6 {
+    font-size: 10px;
+    color: #00947a; }
+
+.custom-function {
+  background-color: #767e78; }
+  .custom-function p {
+    margin-bottom: 20px; }
+  .custom-function .col-div .col:nth-child(1) {
+    background-color: rgba(251, 121, 6, 0.1); }
+  .custom-function .col-div .col:nth-child(2) {
+    background-color: rgba(251, 121, 6, 0.2); }
+  .custom-function .col-div .col:nth-child(3) {
+    background-color: rgba(251, 121, 6, 0.3); }
+  .custom-function .col-div .col:nth-child(4) {
+    background-color: rgba(251, 121, 6, 0.4); }
+  .custom-function .col-div .col {
+    float: left;
+    height: 250px;
+    width: 25%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,80 @@
+/* mixin */
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin font-style($font-size, $font-color, $font-weight, $transform){
+  font-size: $font-size;
+  color: $font-color;
+  font-weight: $font-weight;
+  text-transform: $transform;
+}
+
+@mixin display-prop($display: inline-block, $width: 100%){
+  display: $display;
+  width: $width;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content
+  }
+  :-moz-placeholder {
+    @content
+  }
+  ::-moz-placeholder {
+    @content
+  }
+  :-ms-input-placeholder {
+    @content
+  }  
+}
+
+// @function adjust_width($n) {
+//   @return $n * $first-width + ($n - 1) * $second-width;
+// }
+
+/* Content */
+@mixin section-prop{  
+  @content;  
+}
+/* If else example */
+@mixin border-prop($width, $color, $border-style, $direction: null){
+  @if ($direction){
+    border-#{$direction}: $width $border-style $color;
+  }
+  else{
+    border: $width $border-style $color;
+  }
+}
+
+/*For loop */
+@mixin headings($h1, $decrease,$startcolor) {
+  $color:  $startcolor;
+  @for $i from 1 through 6 {
+    $color: darken($color, $i);
+    h#{$i} {
+      font-size: ($h1+$decrease) - $i * $decrease;
+      color: $color;
+    }
+  }
+}
+
+@mixin bg-color($bgcolor) {
+  @for $j from 1 through 4 {
+    .col:nth-child(#{$j}) {
+      background-color: rgba($bgcolor, ($j/10));
+    }
+  }
+}
+
+
+/* Custom function */
+@function column-width($col,$total) {  
+  @return percentage($col/$total);  
+}
+
+
+

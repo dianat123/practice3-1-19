@@ -1,0 +1,39 @@
+@import '_variable';
+@import '_mixin';
+@import '_base';
+
+.function-ex{
+	@include section-prop{
+		padding: ($base-unit * 2) 0;
+		background-color: mix($grey-color, $light-green, 20%);
+		.title{
+			@include font-style(18px, $dark-grey, bold, uppercase);
+		}
+	}
+}
+.condition-ex{
+	@extend .function-ex;
+	background-color: mix($grey-color, $light-green, 50%);
+	@include border-prop(3px, $dark-grey, solid, bottom);
+	@include border-prop(3px, $dark-grey, solid, top);
+}
+.for-loop-ex{
+	@extend .function-ex;
+	background-color: mix($grey-color, $light-green, 70%);
+	@include headings(60px, 10px, #00ffd3);
+}
+.custom-function{
+	@extend .function-ex;
+	background-color: mix($grey-color, $light-green, 80%);
+	p{
+		margin-bottom: $base-unit * 2;
+	}
+	.col-div{
+		@include bg-color(#fb7906);
+		.col{
+			float: left;
+			height: 250px;
+			width: column-width(3,12);	
+		}
+	}
+}

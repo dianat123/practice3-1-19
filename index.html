@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SASS Assignment</title>
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
+</head>
+<body>
+	<div class="function-ex">
+		<div class="container">
+			<h2 class="title">Example for in-built functions and content</h2>
+			<p>SASS stands for Syntactically Awesome Stylesheet. </p>
+        	<p>The background color of this section has been set using built in function of SASS. </p>
+        	<p>The function used is mix($color1, $color2, [$weight])</p>
+        	<p>@content has also been used for the background color and padding of this section</p>
+		</div>
+	</div>
+	<div class="condition-ex">
+		<div class="container">
+			<h2 class="title">Example for If Else condition</h2>
+        	<p>The border for this section has been set usinf if else condition of SASS</p>
+        	<p>The mixin used is as follows</p>
+        	<p>@mixin border-prop($width, $color, $border-style, $direction: null){
+				@if ($direction){
+				    border-#{$direction}: $width $border-style $color;
+				  }
+				  else{
+				    border: $width $border-style $color;
+				  }
+				}
+			</p>
+		</div>
+	</div>
+	<div class="for-loop-ex">
+		<div class="container">
+			<h2 class="title">Example for "For" loop</h2>
+        	<h1>This is an example for h1</h1>
+        	<h2>This is an example for h2</h2>
+        	<h3>This is an example for h3</h3>
+        	<h4>This is an example for h4</h4>
+        	<h5>This is an example for h5</h5>
+        	<h6>This is an example for h6</h6>
+		</div>
+	</div>
+	<div class="custom-function">
+		<div class="container">
+			<h2 class="title">Example for custom function</h2>
+			<p>This is an example of custom function. Two functions have been used.Function calculates the width and also calculates the background color </p>
+			<div class="col-div">
+	        	<div class="col"></div>
+	        	<div class="col"></div>
+	        	<div class="col"></div>
+	        	<div class="col"></div>
+	        	<div class="clrflt"></div>
+        	</div>
+		</div>
+	</div>
+</body>
+</html>
